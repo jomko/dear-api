@@ -42,6 +42,7 @@ class Dear
      */
     public static function create($accountId = null, $applicationKey = null)
     {
+        /** @phpstan-ignore-next-line */
         return (static::$instance) ? static::$instance : new static($accountId, $applicationKey);
     }
 
